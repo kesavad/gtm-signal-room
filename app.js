@@ -272,10 +272,43 @@
 
   function renderSources(lead) {
     const links = lead.links || [];
-    if (links.length) {
-      return links.map((href, index) => `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">Open source ${index + 1}</a>`).join("");
+    const sourceNames = splitSources(lead.sources);
+    const sourceChips = sourceNames.length
+      ? `<div class="source-names">${sourceNames.map((source, index) => renderSourceChip(lead, source, index)).join("")}</div>`
+      : "";
+    const directLinks = links
+      .map((href, index) => `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">Open source ${index + 1}</a>`)
+      .join("");
+
+    if (sourceChips || directLinks) {
+      return `${sourceChips}${directLinks}`;
     }
-    return `<span>${escapeHtml(lead.sources || "Source noted in report")}</span>`;
+
+    return `<a href="${escapeAttribute(sourceSearchUrl(lead, "source evidence"))}" target="_blank" rel="noreferrer">Find source evidence</a>`;
+  }
+
+  function renderSourceChip(lead, source, index) {
+    const sourceLinks = lead.sourceLinks || [];
+    const explicit = sourceLinks.find((item) => item.label === source) || sourceLinks[index];
+    const href = explicit?.href || lead.links?.[index] || sourceSearchUrl(lead, source);
+    const label = explicit?.label || source;
+    return `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`;
+  }
+
+  function sourceSearchUrl(lead, source) {
+    const query = [lead.account, source, lead.signal].filter(Boolean).join(" ");
+    return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+  }
+
+  function splitSources(sources) {
+    if (!sources) {
+      return [];
+    }
+
+    return String(sources)
+      .split(";")
+      .map((source) => source.trim())
+      .filter(Boolean);
   }
 
   function renderCoverage() {

@@ -119,6 +119,12 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Podcast; Jefferson Health public post; Becker's Digital Health + Health IT.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/ai-speed-to-value-and-building-the-right-team-at-jefferson-health-with-luis-taveras/"
+        }
+      ],
       "links": []
     },
     {
@@ -154,6 +160,12 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Podcast; Becker's Digital Health + Health IT.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/tracy-peffley-system-vice-president-of-revenue-cycle-management-at-cleveland-clinic/"
+        }
+      ],
       "links": []
     },
     {
@@ -169,6 +181,16 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Digital Health + Health IT; LinkedIn public snippets.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Digital Health + Health IT",
+          "href": "https://podcasts.apple.com/us/podcast/scaling-ai-in-healthcare-with-governance-trust-and/id1594089163?i=1000756367876"
+        },
+        {
+          "label": "LinkedIn public snippets",
+          "href": "https://www.linkedin.com/posts/asc-communications_beckers-healthcare-digital-health-health-activity-7441953124816355330-3GW2"
+        }
+      ],
       "links": []
     },
     {
@@ -184,6 +206,12 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast; LinkedIn public snippets.",
+      "sourceLinks": [
+        {
+          "label": "Becker's CFO + Revenue Cycle Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/todd-conklin-executive-vice-president-and-chief-financial-officer-at-care-new-england-health-system-2/"
+        }
+      ],
       "links": []
     },
     {
@@ -199,6 +227,12 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast.",
+      "sourceLinks": [
+        {
+          "label": "Becker's CFO + Revenue Cycle Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/expanding-tertiary-care-access-in-chicagos-western-suburbs-with-kyle-glass-2/"
+        }
+      ],
       "links": []
     },
     {
@@ -213,6 +247,12 @@ window.GTM_INTENT_DATA = {
         "RCM"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast.",
+      "sourceLinks": [
+        {
+          "label": "Becker's CFO + Revenue Cycle Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/leading-revenue-cycle-innovation-through-automation-and-talent-strategy-with-lynn-ansley/"
+        }
+      ],
       "links": []
     },
     {
@@ -228,6 +268,12 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast.",
+      "sourceLinks": [
+        {
+          "label": "Becker's CFO + Revenue Cycle Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/sham-firdausi-deputy-chief-financial-officer-of-county-of-santa-clara-health-system-2/"
+        }
+      ],
       "links": []
     },
     {
@@ -244,6 +290,12 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Healthcare Finance News.",
+      "sourceLinks": [
+        {
+          "label": "Healthcare Finance News",
+          "href": "https://www.healthcarefinancenews.com/news/hospitals-all-sizes-are-using-ai-improve-revenue-cycle-operations"
+        }
+      ],
       "links": []
     },
     {
@@ -260,6 +312,16 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's / Olive session landing page.",
+      "sourceLinks": [
+        {
+          "label": "Becker's / Olive session landing page",
+          "href": "https://www.youtube.com/watch?v=QWnqwDoctUM"
+        },
+        {
+          "label": "LinkedIn public snippet",
+          "href": "https://www.linkedin.com/posts/beth-carlson-1b436236_how-wvu-medicines-ai-workforce-is-reducing-activity-6767539490190856194-gMHY"
+        }
+      ],
       "links": []
     },
     {
@@ -275,6 +337,12 @@ window.GTM_INTENT_DATA = {
         "Scheduling/capacity"
       ],
       "sources": "Becker's Hospital Review.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Hospital Review",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/improving-patient-access-through-data-driven-or-operations/"
+        }
+      ],
       "links": []
     },
     {
@@ -289,6 +357,16 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://podcast.show/beckershealthcarepodcast/why-provider-data-and-ai-are-critical-to-patient-access/"
+        },
+        {
+          "label": "LinkedIn public snippets",
+          "href": "https://www.linkedin.com/posts/asc-communications_podcast-healthcare-leadership-activity-7449806093654048768-02fC"
+        }
+      ],
       "links": []
     },
     {
@@ -304,6 +382,12 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast / LinkedIn public snippets",
+          "href": "https://www.google.com/search?q=Jordan%20Ruch%20AtlantiCare%20VISION%202030%20AI%20agents%20Becker%27s%20Healthcare%20Podcast"
+        }
+      ],
       "links": []
     },
     {
@@ -320,6 +404,16 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Becker's Healthcare Podcast notes / Wave.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast notes / Wave",
+          "href": "https://pod.wave.co/podcast/beckers-healthcare-podcast-c9704216-027c-4122-8f5a-abeb5422159d/shekar-ramanathan-executive-director-digital-transformation-atlantic-health"
+        },
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/shekar-ramanathan-executive-director-digital-transformation-atlantic-health/"
+        }
+      ],
       "links": []
     },
     {
@@ -335,6 +429,16 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
+      "sourceLinks": [
+        {
+          "label": "LinkedIn public snippets",
+          "href": "https://www.linkedin.com/posts/healthdatamovers_healthcare-it-is-no-longer-just-about-systems-activity-7445160974418075648-AF2d"
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/episode/0oZlZuRHzPglRlNdb6JzDE"
+        }
+      ],
       "links": []
     },
     {
@@ -349,6 +453,16 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's Healthcare Podcast / iHeart.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/dwight-raum-executive-vice-president-and-chief-digital-information-officer-at-rochester-regional-health/"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/jp/podcast/dwight-raum-executive-vice-president-and-chief/id1452376188?i=1000772657795"
+        }
+      ],
       "links": []
     },
     {
@@ -364,6 +478,12 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Podcast.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/making-ai-actionable-across-healthcare-with-jawad-khan-2/"
+        }
+      ],
       "links": []
     },
     {
@@ -378,6 +498,16 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
+      "sourceLinks": [
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/sandra-scott-chief-executive-officer-of-one-brooklyn-health/"
+        },
+        {
+          "label": "LinkedIn public snippets",
+          "href": "https://www.linkedin.com/posts/one-brooklyn-health-system-inc_one-brooklyn-health-ceo-dr-sandra-scott-activity-7420509548240871424-agif"
+        }
+      ],
       "links": []
     },
     {
@@ -392,6 +522,16 @@ window.GTM_INTENT_DATA = {
         "General ops"
       ],
       "sources": "UTMB news; Becker's Healthcare Podcast.",
+      "sourceLinks": [
+        {
+          "label": "UTMB news",
+          "href": "https://www.utmb.edu/news/article/utmb-news/2026/03/16/using-ai-and-operational-strategy-to-transform-care-delivery-with-dr.-salim-hayek"
+        },
+        {
+          "label": "Becker's Healthcare Podcast",
+          "href": "https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/using-ai-and-operational-strategy-to-transform-care-delivery-with-dr-salim-hayek/"
+        }
+      ],
       "links": []
     },
     {

@@ -63,7 +63,7 @@ button {
   top: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: minmax(220px, auto) 1fr auto;
+  grid-template-columns: minmax(330px, auto) 1fr auto;
   align-items: center;
   gap: 22px;
   min-height: 72px;
@@ -78,20 +78,27 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   min-width: 0;
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  background: #e4fff0;
-  color: #153421;
-  font-weight: 850;
+.brand-logo-frame {
+  display: inline-flex;
+  align-items: center;
+  width: 166px;
+  height: 42px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(228, 255, 240, 0.86);
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .brand-name,
@@ -837,6 +844,10 @@ a:focus-visible {
     overflow-x: auto;
   }
 
+  .brand {
+    width: fit-content;
+  }
+
   .topbar-actions {
     width: 100%;
     min-width: 0;
@@ -915,6 +926,24 @@ a:focus-visible {
     width: 100vw;
     max-width: 100vw;
     overflow: hidden;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .brand-logo-frame {
+    width: 142px;
+    height: 38px;
+    padding: 8px 9px;
+  }
+
+  .brand-name {
+    font-size: 15px;
+  }
+
+  .brand-subtitle {
+    font-size: 12px;
   }
 
   h1 {

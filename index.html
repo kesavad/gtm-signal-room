@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luminai GTM Signal Room</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Luminai GTM signal room">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>
+          <span class="brand-name">Luminai GTM</span>
+          <span class="brand-subtitle">Signal Room</span>
+        </span>
+      </a>
+      <nav class="topnav" aria-label="Dashboard sections">
+        <a href="#priority">Priority</a>
+        <a href="#explorer">Explorer</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#method">Method</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="button ghost" id="copyBrief" type="button">Copy brief</button>
+        <button class="button solid" id="exportCsv" type="button">Export CSV</button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section id="overview" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">300-account universe · updated Jun 20, 2026</p>
+          <h1>Health systems expressing intent around admin AI.</h1>
+          <p class="hero-text">A GTM-ready account view for patient access, RCM, prior auth, fax/referrals, contact center, scheduling, and administrative workflow automation.</p>
+        </div>
+        <div class="hero-panel" aria-label="Signal summary">
+          <div class="hero-stat">
+            <span id="metricLeads">0</span>
+            <label>Signal accounts</label>
+          </div>
+          <div class="hero-stat">
+            <span id="metricStrong">0</span>
+            <label>Strong intent</label>
+          </div>
+          <div class="hero-stat">
+            <span id="metricCoverage">0%</span>
+            <label>Coverage hit rate</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="insight-grid" aria-label="Signal analytics">
+        <article class="panel tier-panel">
+          <div class="panel-header">
+            <h2>Tier Mix</h2>
+            <span>35 qualified signals</span>
+          </div>
+          <div class="tier-bars" id="tierBars"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Use Case Demand</h2>
+            <span>Primary themes</span>
+          </div>
+          <div class="theme-cloud" id="themeCloud"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Best Source Types</h2>
+            <span>Current harvest</span>
+          </div>
+          <div class="source-mix">
+            <div><strong>Podcasts & talks</strong><span>Leader pain and budget narrative</span></div>
+            <div><strong>RFPs</strong><span>Explicit buying motion</span></div>
+            <div><strong>Case studies</strong><span>Validated workflow pain</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="priority" class="content-section">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Highest signal</p>
+            <h2>Priority Account Board</h2>
+          </div>
+          <a class="text-link" href="./reports/expressed_interest_v4_300.md">Source report</a>
+        </div>
+        <div class="priority-grid" id="priorityGrid"></div>
+      </section>
+
+      <section id="explorer" class="content-section">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Working queue</p>
+            <h2>Lead Explorer</h2>
+          </div>
+          <div class="result-count" id="leadCount">0 accounts</div>
+        </div>
+
+        <div class="filters" aria-label="Lead filters">
+          <label class="search-field">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Account, signal, source, use case">
+          </label>
+          <div class="segmented" id="tierFilter" role="group" aria-label="Tier filter">
+            <button type="button" data-tier="all" class="selected">All</button>
+            <button type="button" data-tier="Strong expressed intent">Strong</button>
+            <button type="button" data-tier="Strong watchlist">Watchlist</button>
+            <button type="button" data-tier="Lower confidence">Lower</button>
+          </div>
+          <label class="select-field">
+            <span>Use case</span>
+            <select id="useCaseFilter"></select>
+          </label>
+        </div>
+
+        <div class="lead-list" id="leadList"></div>
+      </section>
+
+      <section id="coverage" class="content-section">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Universe coverage</p>
+            <h2>300 Health Systems</h2>
+          </div>
+          <div class="coverage-actions">
+            <div class="result-count" id="coverageCount">300 accounts</div>
+            <div class="coverage-toggle" id="coverageToggle" role="group" aria-label="Coverage filter">
+              <button type="button" data-coverage="all" class="selected">All</button>
+              <button type="button" data-coverage="found">Signal found</button>
+              <button type="button" data-coverage="none">No signal yet</button>
+            </div>
+          </div>
+        </div>
+        <div class="coverage-shell">
+          <table class="coverage-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Account</th>
+                <th>Region</th>
+                <th>Status</th>
+                <th>Seed</th>
+              </tr>
+            </thead>
+            <tbody id="coverageRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="method" class="content-section method-section">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Research rules</p>
+            <h2>Method</h2>
+          </div>
+        </div>
+        <div class="method-grid">
+          <article>
+            <h3>Counted</h3>
+            <p>Operator quotes, executive podcasts, RFPs, testimony, conference pages, public posts, and health-system-authored case studies tied to admin burden, access, RCM, prior auth, fax/referrals, scheduling, contact center, claims, denials, or workflow automation.</p>
+          </article>
+          <article>
+            <h3>Excluded</h3>
+            <p>Vendor customer lists without health-system-side problem statements, generic AI market coverage, clinical-only AI, imaging AI, ambient scribe, research, and governance content without an operational workflow signal.</p>
+          </article>
+          <article>
+            <h3>Next Data Upgrade</h3>
+            <p>Plug in a compliant LinkedIn or search provider to track leader posts, comments, event activity, job posts, RFP feeds, and procurement changes daily.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

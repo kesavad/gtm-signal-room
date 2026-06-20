@@ -1,0 +1,301 @@
+rank,name,region,seed_source
+1,HCA Healthcare,National,large_system_seed
+2,CommonSpirit Health,National,large_system_seed
+3,Ascension,National,large_system_seed
+4,Kaiser Permanente,National,large_system_seed
+5,Providence,National,large_system_seed
+6,Tenet Healthcare,National,large_system_seed
+7,Trinity Health,National,large_system_seed
+8,UPMC,Pennsylvania,large_system_seed
+9,Mayo Clinic,Minnesota,large_system_seed
+10,Cleveland Clinic,Ohio,large_system_seed
+11,Mass General Brigham,Massachusetts,large_system_seed
+12,AdventHealth,Florida,large_system_seed
+13,Baylor Scott & White Health,Texas,large_system_seed
+14,Northwell Health,New York,large_system_seed
+15,Advocate Health,National,large_system_seed
+16,Sutter Health,California,large_system_seed
+17,Banner Health,Arizona,large_system_seed
+18,Intermountain Health,Mountain West,large_system_seed
+19,Bon Secours Mercy Health,National,large_system_seed
+20,BJC HealthCare,Missouri,large_system_seed
+21,NewYork-Presbyterian,New York,large_system_seed
+22,NYU Langone Health,New York,large_system_seed
+23,Mount Sinai Health System,New York,large_system_seed
+24,Johns Hopkins Medicine,Maryland,large_system_seed
+25,Penn Medicine,Pennsylvania,large_system_seed
+26,University of Michigan Health,Michigan,large_system_seed
+27,Duke Health,North Carolina,large_system_seed
+28,Stanford Health Care,California,large_system_seed
+29,UCLA Health,California,large_system_seed
+30,UCSF Health,California,large_system_seed
+31,UCHealth,Colorado,large_system_seed
+32,University of California Health,California,large_system_seed
+33,Cedars-Sinai,California,large_system_seed
+34,Ochsner Health,Louisiana,large_system_seed
+35,Corewell Health,Michigan,large_system_seed
+36,Henry Ford Health,Michigan,large_system_seed
+37,Froedtert ThedaCare Health,Wisconsin,large_system_seed
+38,M Health Fairview,Minnesota,large_system_seed
+39,University Hospitals,Ohio,large_system_seed
+40,Yale New Haven Health,Connecticut,large_system_seed
+41,Rush University System for Health,Illinois,large_system_seed
+42,MedStar Health,Mid-Atlantic,large_system_seed
+43,Inova,Virginia,large_system_seed
+44,WellSpan Health,Pennsylvania,large_system_seed
+45,Geisinger,Pennsylvania,large_system_seed
+46,Sentara Health,Virginia,large_system_seed
+47,Novant Health,North Carolina,large_system_seed
+48,Atrium Health,North Carolina,large_system_seed
+49,UNC Health,North Carolina,large_system_seed
+50,MUSC Health,South Carolina,large_system_seed
+51,Prisma Health,South Carolina,large_system_seed
+52,Orlando Health,Florida,large_system_seed
+53,Tampa General Hospital,Florida,large_system_seed
+54,BayCare Health System,Florida,large_system_seed
+55,Baptist Health South Florida,Florida,large_system_seed
+56,Memorial Healthcare System,Florida,large_system_seed
+57,Lee Health,Florida,large_system_seed
+58,University of Miami Health System,Florida,large_system_seed
+59,Jackson Health System,Florida,large_system_seed
+60,Emory Healthcare,Georgia,large_system_seed
+61,Piedmont Healthcare,Georgia,large_system_seed
+62,Wellstar Health System,Georgia,large_system_seed
+63,Grady Health System,Georgia,large_system_seed
+64,Baptist Health Jacksonville,Florida,large_system_seed
+65,UF Health,Florida,large_system_seed
+66,RWJBarnabas Health,New Jersey,large_system_seed
+67,Hackensack Meridian Health,New Jersey,large_system_seed
+68,Atlantic Health System,New Jersey,large_system_seed
+69,Cooper University Health Care,New Jersey,large_system_seed
+70,Virtua Health,New Jersey,large_system_seed
+71,Jefferson Health,Pennsylvania,large_system_seed
+72,Temple Health,Pennsylvania,large_system_seed
+73,Lehigh Valley Health Network,Pennsylvania,large_system_seed
+74,Allegheny Health Network,Pennsylvania,large_system_seed
+75,St. Luke's University Health Network,Pennsylvania,large_system_seed
+76,UMass Memorial Health,Massachusetts,large_system_seed
+77,Beth Israel Lahey Health,Massachusetts,large_system_seed
+78,Tufts Medicine,Massachusetts,large_system_seed
+79,Boston Medical Center Health System,Massachusetts,large_system_seed
+80,Hartford HealthCare,Connecticut,large_system_seed
+81,Nuvance Health,Connecticut,large_system_seed
+82,Lifespan Health System,Rhode Island,large_system_seed
+83,Care New England Health System,Rhode Island,large_system_seed
+84,MaineHealth,Maine,large_system_seed
+85,Dartmouth Health,New Hampshire,large_system_seed
+86,University of Vermont Health Network,Vermont,large_system_seed
+87,Rochester Regional Health,New York,large_system_seed
+88,University of Rochester Medical Center,New York,large_system_seed
+89,Catholic Health New York,New York,large_system_seed
+90,Kaleida Health,New York,large_system_seed
+91,Albany Med Health System,New York,large_system_seed
+92,Stony Brook Medicine,New York,large_system_seed
+93,Montefiore Health System,New York,large_system_seed
+94,NYC Health + Hospitals,New York,large_system_seed
+95,Maimonides Health,New York,large_system_seed
+96,ChristianaCare,Delaware,large_system_seed
+97,Bayhealth,Delaware,large_system_seed
+98,TidalHealth,Delmarva,large_system_seed
+99,LifeBridge Health,Maryland,large_system_seed
+100,University of Maryland Medical System,Maryland,large_system_seed
+101,Luminis Health,Maryland,large_system_seed
+102,VCU Health,Virginia,large_system_seed
+103,UVA Health,Virginia,large_system_seed
+104,Carilion Clinic,Virginia,large_system_seed
+105,Cone Health,North Carolina,large_system_seed
+106,WakeMed Health & Hospitals,North Carolina,large_system_seed
+107,ECU Health,North Carolina,large_system_seed
+108,Spartanburg Regional Healthcare System,South Carolina,large_system_seed
+109,McLeod Health,South Carolina,large_system_seed
+110,Ballad Health,Tennessee,large_system_seed
+111,Erlanger Health System,Tennessee,large_system_seed
+112,Vanderbilt University Medical Center,Tennessee,large_system_seed
+113,Baptist Memorial Health Care,Tennessee,large_system_seed
+114,Methodist Le Bonheur Healthcare,Tennessee,large_system_seed
+115,Mercy,Missouri,large_system_seed
+116,SSM Health,Missouri,large_system_seed
+117,CoxHealth,Missouri,large_system_seed
+118,Saint Luke's Health System,Kansas City,large_system_seed
+119,The University of Kansas Health System,Kansas,large_system_seed
+120,Stormont Vail Health,Kansas,large_system_seed
+121,MercyOne,Iowa,large_system_seed
+122,UnityPoint Health,Iowa,large_system_seed
+123,Sanford Health,Dakotas,large_system_seed
+124,Essentia Health,Upper Midwest,large_system_seed
+125,Avera Health,Dakotas,large_system_seed
+126,Monument Health,South Dakota,large_system_seed
+127,Marshfield Clinic Health System,Wisconsin,large_system_seed
+128,Bellin and Gundersen Health System,Wisconsin,large_system_seed
+129,UW Health,Wisconsin,large_system_seed
+130,ProHealth Care,Wisconsin,large_system_seed
+131,Northwestern Medicine,Illinois,large_system_seed
+132,Endeavor Health,Illinois,large_system_seed
+133,UChicago Medicine,Illinois,large_system_seed
+134,OSF HealthCare,Illinois,large_system_seed
+135,Carle Health,Illinois,large_system_seed
+136,Franciscan Health,Indiana,large_system_seed
+137,Community Health Network,Indiana,large_system_seed
+138,Indiana University Health,Indiana,large_system_seed
+139,Parkview Health,Indiana,large_system_seed
+140,Beacon Health System,Indiana,large_system_seed
+141,Bronson Healthcare,Michigan,large_system_seed
+142,McLaren Health Care,Michigan,large_system_seed
+143,Covenant HealthCare,Michigan,large_system_seed
+144,OhioHealth,Ohio,large_system_seed
+145,The Ohio State University Wexner Medical Center,Ohio,large_system_seed
+146,Cincinnati Children's Hospital Medical Center,Ohio,large_system_seed
+147,UC Health Cincinnati,Ohio,large_system_seed
+148,Kettering Health,Ohio,large_system_seed
+149,Premier Health,Ohio,large_system_seed
+150,ProMedica,Ohio,large_system_seed
+151,MetroHealth System,Ohio,large_system_seed
+152,Summa Health,Ohio,large_system_seed
+153,WVU Medicine,West Virginia,large_system_seed
+154,Marshall Health Network,West Virginia,large_system_seed
+155,UK HealthCare,Kentucky,large_system_seed
+156,Baptist Health Kentucky,Kentucky,large_system_seed
+157,Norton Healthcare,Kentucky,large_system_seed
+158,Deaconess Health System,Indiana,large_system_seed
+159,Owensboro Health,Kentucky,large_system_seed
+160,Houston Methodist,Texas,large_system_seed
+161,Memorial Hermann Health System,Texas,large_system_seed
+162,Texas Health Resources,Texas,large_system_seed
+163,UT Southwestern Medical Center,Texas,large_system_seed
+164,University Health San Antonio,Texas,large_system_seed
+165,CHRISTUS Health,Texas,large_system_seed
+166,Methodist Healthcare San Antonio,Texas,large_system_seed
+167,Texas Children's Hospital,Texas,large_system_seed
+168,St. Luke's Health,Texas,large_system_seed
+169,MemorialCare,California,large_system_seed
+170,Hoag,California,large_system_seed
+171,City of Hope,California,large_system_seed
+172,Keck Medicine of USC,California,large_system_seed
+173,Loma Linda University Health,California,large_system_seed
+174,Sharp HealthCare,California,large_system_seed
+175,Scripps Health,California,large_system_seed
+176,Dignity Health,California,large_system_seed
+177,Community Medical Centers,California,large_system_seed
+178,Valley Children's Healthcare,California,large_system_seed
+179,PeaceHealth,Pacific Northwest,large_system_seed
+180,MultiCare Health System,Washington,large_system_seed
+181,Virginia Mason Franciscan Health,Washington,large_system_seed
+182,UW Medicine,Washington,large_system_seed
+183,Swedish Health Services,Washington,large_system_seed
+184,Legacy Health,Oregon,large_system_seed
+185,Oregon Health & Science University,Oregon,large_system_seed
+186,Asante,Oregon,large_system_seed
+187,St. Charles Health System,Oregon,large_system_seed
+188,Renown Health,Nevada,large_system_seed
+189,University of Utah Health,Utah,large_system_seed
+190,MountainStar Healthcare,Utah,large_system_seed
+191,HonorHealth,Arizona,large_system_seed
+192,Valleywise Health,Arizona,large_system_seed
+193,Northern Arizona Healthcare,Arizona,large_system_seed
+194,Presbyterian Healthcare Services,New Mexico,large_system_seed
+195,Lovelace Health System,New Mexico,large_system_seed
+196,Denver Health,Colorado,large_system_seed
+197,Billings Clinic,Montana,large_system_seed
+198,Benefis Health System,Montana,large_system_seed
+199,Bozeman Health,Montana,large_system_seed
+200,St. Alphonsus Health System,Idaho,large_system_seed
+201,Community Health Systems,National,expanded_large_system_seed
+202,Prime Healthcare,National,expanded_large_system_seed
+203,Universal Health Services,National,expanded_large_system_seed
+204,LifePoint Health,National,expanded_large_system_seed
+205,Ardent Health Services,National,expanded_large_system_seed
+206,ScionHealth,National,expanded_large_system_seed
+207,Quorum Health,National,expanded_large_system_seed
+208,Select Medical,National,expanded_large_system_seed
+209,Encompass Health,National,expanded_large_system_seed
+210,PAM Health,National,expanded_large_system_seed
+211,Vibra Healthcare,National,expanded_large_system_seed
+212,Ernest Health,National,expanded_large_system_seed
+213,Kindred Hospitals,National,expanded_large_system_seed
+214,Acadia Healthcare,National,expanded_large_system_seed
+215,Universal Health Services Behavioral Health,National,expanded_large_system_seed
+216,Children's Hospital of Philadelphia,Pennsylvania,expanded_children_system_seed
+217,Boston Children's Hospital,Massachusetts,expanded_children_system_seed
+218,Seattle Children's,Washington,expanded_children_system_seed
+219,Children's National Hospital,District of Columbia,expanded_children_system_seed
+220,Rady Children's Hospital,California,expanded_children_system_seed
+221,Phoenix Children's,Arizona,expanded_children_system_seed
+222,Nationwide Children's Hospital,Ohio,expanded_children_system_seed
+223,Children's Healthcare of Atlanta,Georgia,expanded_children_system_seed
+224,Children's Mercy Kansas City,Missouri,expanded_children_system_seed
+225,Children's Hospital Colorado,Colorado,expanded_children_system_seed
+226,Ann & Robert H. Lurie Children's Hospital of Chicago,Illinois,expanded_children_system_seed
+227,Cook Children's Health Care System,Texas,expanded_children_system_seed
+228,Nicklaus Children's Health System,Florida,expanded_children_system_seed
+229,Akron Children's,Ohio,expanded_children_system_seed
+230,Children's Nebraska,Nebraska,expanded_children_system_seed
+231,Connecticut Children's,Connecticut,expanded_children_system_seed
+232,Memorial Sloan Kettering Cancer Center,New York,expanded_specialty_system_seed
+233,MD Anderson Cancer Center,Texas,expanded_specialty_system_seed
+234,Moffitt Cancer Center,Florida,expanded_specialty_system_seed
+235,Dana-Farber Cancer Institute,Massachusetts,expanded_specialty_system_seed
+236,Roswell Park Comprehensive Cancer Center,New York,expanded_specialty_system_seed
+237,City of Hope,California,expanded_specialty_system_seed
+238,Hospital for Special Surgery,New York,expanded_specialty_system_seed
+239,University of Texas Medical Branch,Texas,expanded_academic_system_seed
+240,UAB Medicine,Alabama,expanded_academic_system_seed
+241,University of Iowa Health Care,Iowa,expanded_academic_system_seed
+242,Nebraska Medicine,Nebraska,expanded_academic_system_seed
+243,University of Mississippi Medical Center,Mississippi,expanded_academic_system_seed
+244,University of Arkansas for Medical Sciences,Arkansas,expanded_academic_system_seed
+245,University of New Mexico Health,New Mexico,expanded_academic_system_seed
+246,UC Davis Health,California,expanded_academic_system_seed
+247,UC San Diego Health,California,expanded_academic_system_seed
+248,UCI Health,California,expanded_academic_system_seed
+249,University of Chicago Medicine,Illinois,expanded_academic_system_seed
+250,UI Health,Illinois,expanded_academic_system_seed
+251,Loyola Medicine,Illinois,expanded_academic_system_seed
+252,Medical College of Wisconsin Froedtert,Wisconsin,expanded_academic_system_seed
+253,TTUHSC / Texas Tech Physicians,Texas,expanded_academic_system_seed
+254,OU Health,Oklahoma,expanded_academic_system_seed
+255,The University of Tennessee Medical Center,Tennessee,expanded_academic_system_seed
+256,University of Louisville Health,Kentucky,expanded_academic_system_seed
+257,Parkland Health,Texas,expanded_public_system_seed
+258,Harris Health System,Texas,expanded_public_system_seed
+259,JPS Health Network,Texas,expanded_public_system_seed
+260,Cook County Health,Illinois,expanded_public_system_seed
+261,Alameda Health System,California,expanded_public_system_seed
+262,Contra Costa Health,California,expanded_public_system_seed
+263,San Mateo Medical Center,California,expanded_public_system_seed
+264,Nassau Health Care Corporation,New York,expanded_public_system_seed
+265,One Brooklyn Health,New York,expanded_public_system_seed
+266,Regional One Health,Tennessee,expanded_public_system_seed
+267,AtlantiCare,New Jersey,expanded_regional_system_seed
+268,John Muir Health,California,expanded_regional_system_seed
+269,El Camino Health,California,expanded_regional_system_seed
+270,Valley Health System,New Jersey,expanded_regional_system_seed
+271,Main Line Health,Pennsylvania,expanded_regional_system_seed
+272,Tower Health,Pennsylvania,expanded_regional_system_seed
+273,Southcoast Health,Massachusetts,expanded_regional_system_seed
+274,South Shore Health,Massachusetts,expanded_regional_system_seed
+275,Covenant Health,Tennessee,expanded_regional_system_seed
+276,Appalachian Regional Healthcare,Kentucky,expanded_regional_system_seed
+277,Arnot Health,New York,expanded_regional_system_seed
+278,Confluence Health,Washington,expanded_regional_system_seed
+279,EvergreenHealth,Washington,expanded_regional_system_seed
+280,The Everett Clinic / Optum Washington,Washington,expanded_regional_system_seed
+281,Skagit Regional Health,Washington,expanded_regional_system_seed
+282,Salem Health,Oregon,expanded_regional_system_seed
+283,Samaritan Health Services,Oregon,expanded_regional_system_seed
+284,Saint Luke's Health System of Idaho,Idaho,expanded_regional_system_seed
+285,Kootenai Health,Idaho,expanded_regional_system_seed
+286,Logan Health,Montana,expanded_regional_system_seed
+287,Boone Health,Missouri,expanded_regional_system_seed
+288,Freeman Health System,Missouri,expanded_regional_system_seed
+289,Mosaic Life Care,Missouri,expanded_regional_system_seed
+290,Salina Regional Health Center,Kansas,expanded_regional_system_seed
+291,Huntsville Hospital Health System,Alabama,expanded_regional_system_seed
+292,Infirmary Health,Alabama,expanded_regional_system_seed
+293,Tanner Health System,Georgia,expanded_regional_system_seed
+294,East Alabama Health,Alabama,expanded_regional_system_seed
+295,Baptist Health Care,Florida,expanded_regional_system_seed
+296,Sarasota Memorial Health Care System,Florida,expanded_regional_system_seed
+297,NCH Healthcare System,Florida,expanded_regional_system_seed
+298,Jupiter Medical Center,Florida,expanded_regional_system_seed
+299,Broward Health,Florida,expanded_regional_system_seed
+300,Halifax Health,Florida,expanded_regional_system_seed

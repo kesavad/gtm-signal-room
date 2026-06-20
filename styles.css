@@ -550,6 +550,74 @@ select {
   margin-top: 12px;
 }
 
+.account-matches {
+  margin-top: 12px;
+}
+
+.match-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.match-summary div {
+  display: grid;
+  gap: 3px;
+}
+
+.match-summary span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.match-summary a {
+  color: var(--forest);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.match-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-top: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.account-chip {
+  display: inline-grid;
+  gap: 2px;
+  min-height: 44px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-soft);
+}
+
+.account-chip.found {
+  border-color: rgba(35, 129, 92, 0.35);
+  background: var(--mint);
+}
+
+.account-chip strong {
+  font-size: 13px;
+}
+
+.account-chip small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
 .empty-state {
   display: grid;
   gap: 5px;
@@ -558,6 +626,11 @@ select {
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.72);
   color: var(--muted);
+}
+
+.empty-state.compact {
+  padding: 14px;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
 .empty-state strong {

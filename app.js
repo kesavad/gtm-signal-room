@@ -27,6 +27,7 @@
     tierFilter: document.getElementById("tierFilter"),
     useCaseFilter: document.getElementById("useCaseFilter"),
     coverageToggle: document.getElementById("coverageToggle"),
+    accountMatches: document.getElementById("accountMatches"),
     leadList: document.getElementById("leadList"),
     leadCount: document.getElementById("leadCount"),
     coverageCount: document.getElementById("coverageCount"),
@@ -44,6 +45,7 @@
     renderPriorityBoard();
     renderUseCaseOptions();
     syncControls();
+    renderAccountMatches();
     renderLeads();
     renderCoverage();
     bindEvents();
@@ -54,6 +56,7 @@
       state.query = event.target.value.trim().toLowerCase();
       updateUrl();
       renderPriorityBoard();
+      renderAccountMatches();
       renderLeads();
       renderCoverage();
     });
@@ -65,6 +68,7 @@
       updateSelected(els.tierFilter, button);
       updateUrl();
       renderPriorityBoard();
+      renderAccountMatches();
       renderLeads();
     });
 
@@ -72,6 +76,7 @@
       state.useCase = event.target.value;
       updateUrl();
       renderPriorityBoard();
+      renderAccountMatches();
       renderLeads();
     });
 
@@ -81,6 +86,7 @@
       state.coverage = button.dataset.coverage;
       updateSelected(els.coverageToggle, button);
       updateUrl();
+      renderAccountMatches();
       renderCoverage();
     });
 
@@ -201,6 +207,41 @@
       : renderEmptyState("No expressed-interest leads match the current filters.");
   }
 
+  function renderAccountMatches() {
+    if (!state.query) {
+      els.accountMatches.innerHTML = "";
+      return;
+    }
+
+    const rows = matchingCoverageAccounts();
+    const withSignals = rows.filter(accountHasLead).length;
+    const preview = rows.slice(0, 10);
+    els.accountMatches.innerHTML = `
+      <div class="match-summary">
+        <div>
+          <strong>${rows.length} coverage match${rows.length === 1 ? "" : "es"}</strong>
+          <span>${withSignals} with expressed-interest signals</span>
+        </div>
+        ${rows.length ? `<a href="#coverage">View in coverage</a>` : ""}
+      </div>
+      ${
+        preview.length
+          ? `<div class="match-chips">${preview.map(renderAccountChip).join("")}</div>`
+          : `<div class="empty-state compact"><strong>No account matches</strong><span>Try a system name, region, use case, or source term.</span></div>`
+      }
+    `;
+  }
+
+  function renderAccountChip(account) {
+    const found = accountHasLead(account);
+    return `
+      <span class="account-chip ${found ? "found" : ""}">
+        <strong>${escapeHtml(account.name)}</strong>
+        <small>${found ? "Signal found" : "No signal yet"}</small>
+      </span>
+    `;
+  }
+
   function renderLeadCard(lead) {
     const badgeClass = lead.tier === "Strong expressed intent" ? "strong" : lead.tier === "Strong watchlist" ? "watchlist" : "lower";
     const evidence = lead.evidence ? `<p class="lead-detail"><strong>Evidence:</strong> ${escapeHtml(lead.evidence)}</p>` : "";
@@ -238,12 +279,7 @@
   }
 
   function renderCoverage() {
-    const rows = accounts.filter((account) => {
-      const found = accountHasLead(account);
-      if (state.coverage === "found") return found;
-      if (state.coverage === "none") return !found;
-      return true;
-    }).filter(accountMatchesSearch);
+    const rows = matchingCoverageAccounts();
 
     els.coverageCount.textContent = `${rows.length} account${rows.length === 1 ? "" : "s"}`;
     els.coverageRows.innerHTML = rows.length
@@ -264,6 +300,15 @@
       : '<tr><td colspan="5" class="empty-table">No accounts match the current search.</td></tr>';
   }
 
+  function matchingCoverageAccounts() {
+    return accounts.filter((account) => {
+      const found = accountHasLead(account);
+      if (state.coverage === "found") return found;
+      if (state.coverage === "none") return !found;
+      return true;
+    }).filter(accountMatchesSearch);
+  }
+
   function filteredLeads() {
     return leads.filter((lead) => {
       if (state.tier !== "all" && lead.tier !== state.tier) return false;
@@ -278,8 +323,8 @@
         lead.sources,
         lead.useCases.join(" "),
         nextMove(lead),
-      ].join(" ").toLowerCase();
-      return haystack.includes(state.query);
+      ];
+      return matchesQuery(haystack);
     });
   }
 
@@ -373,8 +418,24 @@
         lead.sources,
         lead.useCases.join(" "),
       ]),
-    ].join(" ").toLowerCase();
-    return haystack.includes(state.query);
+    ];
+    return matchesQuery(haystack);
+  }
+
+  function matchesQuery(values) {
+    if (!state.query) return true;
+    const text = values.join(" ").toLowerCase();
+    const normalized = normalizeName(text);
+    const tokens = normalized.split(" ").filter(Boolean);
+    return state.query.split(/\s+/).filter(Boolean).every((rawTerm) => {
+      const term = rawTerm.toLowerCase();
+      const normalizedTerm = normalizeName(rawTerm);
+      if (!normalizedTerm) return true;
+      if (normalizedTerm.length <= 3) {
+        return tokens.includes(normalizedTerm);
+      }
+      return text.includes(term) || normalized.includes(normalizedTerm);
+    });
   }
 
   function leadMatchesAccount(lead, account) {

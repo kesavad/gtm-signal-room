@@ -2,6 +2,7 @@
   const data = window.GTM_INTENT_DATA;
   const leads = data.leads;
   const accounts = data.accounts;
+  const sourceUseCases = data.sourceUseCases || [];
 
   const tierColors = {
     "Strong expressed intent": "#23815c",
@@ -23,6 +24,7 @@
     tierBars: document.getElementById("tierBars"),
     themeCloud: document.getElementById("themeCloud"),
     priorityGrid: document.getElementById("priorityGrid"),
+    sourceUseCaseGrid: document.getElementById("sourceUseCaseGrid"),
     searchInput: document.getElementById("searchInput"),
     tierFilter: document.getElementById("tierFilter"),
     useCaseFilter: document.getElementById("useCaseFilter"),
@@ -43,6 +45,7 @@
     renderTierBars();
     renderThemeCloud();
     renderPriorityBoard();
+    renderSourceUseCases();
     renderUseCaseOptions();
     syncControls();
     renderAccountMatches();
@@ -158,11 +161,40 @@
   }
 
   function renderUseCaseOptions() {
-    const useCases = Array.from(new Set(leads.flatMap((lead) => lead.useCases))).sort();
+    const useCases = Array.from(new Set([
+      ...leads.flatMap((lead) => lead.useCases),
+      ...sourceUseCases.map((item) => item.name),
+    ])).sort();
     els.useCaseFilter.innerHTML = [
       '<option value="all">All use cases</option>',
       ...useCases.map((item) => `<option value="${escapeHtml(item)}">${escapeHtml(item)}</option>`),
     ].join("");
+  }
+
+  function renderSourceUseCases() {
+    if (!els.sourceUseCaseGrid) return;
+    els.sourceUseCaseGrid.innerHTML = sourceUseCases.map((useCase) => {
+      const leadCount = matchingLeadCount(useCase.name);
+      return `
+        <article class="usecase-card">
+          <div class="usecase-card-top">
+            <h3>${escapeHtml(useCase.name)}</h3>
+            <span>${leadCount} lead${leadCount === 1 ? "" : "s"}</span>
+          </div>
+          <p>${escapeHtml(useCase.motion)}</p>
+          <div class="usecase-block">
+            <strong>Trigger terms</strong>
+            <div class="lead-meta">${(useCase.signals || []).map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div>
+          </div>
+          <div class="usecase-block">
+            <strong>Best sources</strong>
+            <ul>${(useCase.sourceTypes || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+          </div>
+          <div class="usecase-examples">${(useCase.exampleAccounts || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+          <div class="usecase-links">${(useCase.links || []).map((link) => `<a href="${escapeAttribute(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}</div>
+        </article>
+      `;
+    }).join("");
   }
 
   function hydrateStateFromUrl() {
@@ -345,7 +377,7 @@
   function filteredLeads() {
     return leads.filter((lead) => {
       if (state.tier !== "all" && lead.tier !== state.tier) return false;
-      if (state.useCase !== "all" && !lead.useCases.includes(state.useCase)) return false;
+      if (state.useCase !== "all" && !leadHasUseCase(lead, state.useCase)) return false;
       if (!state.query) return true;
       const haystack = [
         lead.account,
@@ -368,6 +400,15 @@
     }
     if (text.includes("fax") || text.includes("referral")) {
       return "Lead with referral intake and fax automation proof; find access ops owner.";
+    }
+    if (text.includes("document management") || text.includes("document processing") || text.includes("document intake")) {
+      return "Lead with document intake, classification, queue routing, and EHR attachment automation.";
+    }
+    if (text.includes("contract intelligence") || text.includes("underpayment") || text.includes("payment variance")) {
+      return "Build a revenue integrity brief around expected reimbursement, payer contracts, and underpayment recovery.";
+    }
+    if (text.includes("pharmacy operations") || text.includes("specialty pharmacy") || text.includes("benefit verification") || text.includes("340b")) {
+      return "Target pharmacy operations and medication access leaders with benefit verification, PA, routing, and 340B workflow automation.";
     }
     if (text.includes("prior authorization") || text.includes("prior auth")) {
       return "Lead with prior auth automation, exception handling, and RCM operations outcomes.";
@@ -453,6 +494,25 @@
       ]),
     ];
     return matchesQuery(haystack);
+  }
+
+  function leadHasUseCase(lead, useCase) {
+    if (lead.useCases.includes(useCase)) return true;
+    const sourceUseCase = sourceUseCases.find((item) => item.name === useCase);
+    if (!sourceUseCase) return false;
+    const haystack = [
+      lead.account,
+      lead.signal,
+      lead.evidence,
+      lead.why,
+      lead.sources,
+      lead.useCases.join(" "),
+    ].join(" ").toLowerCase();
+    return (sourceUseCase.signals || []).some((term) => haystack.includes(String(term).toLowerCase()));
+  }
+
+  function matchingLeadCount(useCase) {
+    return leads.filter((lead) => leadHasUseCase(lead, useCase)).length;
   }
 
   function matchesQuery(values) {

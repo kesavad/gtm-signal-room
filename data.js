@@ -82,11 +82,15 @@ window.GTM_INTENT_DATA = {
       "why": "Direct problem validation around fax/referral automation. Stanford may be a build-first account, but the pain is proven and quantified.",
       "useCases": [
         "Fax/referrals",
-        "Admin burden"
+        "Admin burden",
+        "Faxes",
+        "Referrals",
+        "Document management"
       ],
       "sources": "NEJM Catalyst; public LinkedIn summaries.",
       "links": [
-        "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0273"
+        "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0273",
+        "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
       ]
     },
     {
@@ -140,7 +144,10 @@ window.GTM_INTENT_DATA = {
         "Fax/referrals",
         "Contact center",
         "Scheduling/capacity",
-        "Admin burden"
+        "Admin burden",
+        "Faxes",
+        "Referrals",
+        "Document management"
       ],
       "sources": "NUMC RFP; Govly; HigherGov.",
       "links": [
@@ -657,10 +664,14 @@ window.GTM_INTENT_DATA = {
       "evidence": "",
       "why": "Good RCM pressure signal but weaker explicit AI/admin-agent expression.",
       "useCases": [
-        "RCM"
+        "RCM",
+        "Pharmacy operations",
+        "Prior auth"
       ],
       "sources": "",
-      "links": []
+      "links": [
+        "https://www.plenful.com/use-cases/for-specialty-pharmacy"
+      ]
     },
     {
       "rank": 35,
@@ -2777,6 +2788,217 @@ window.GTM_INTENT_DATA = {
       "region": "Florida",
       "seed_source": "expanded_regional_system_seed",
       "hasLead": false
+    }
+  ],
+  "sourceUseCases": [
+    {
+      "name": "Faxes",
+      "motion": "Inbound fax triage, labeling, routing, and exception handling where clinical or administrative documents still arrive outside the EHR.",
+      "signals": [
+        "AI fax",
+        "fax triage",
+        "RightFax",
+        "OnBase queue",
+        "faxed orders",
+        "faxed referrals"
+      ],
+      "sourceTypes": [
+        "Health-system case studies",
+        "RFPs for patient access/call center platforms",
+        "Vendor case studies with named workflow metrics"
+      ],
+      "exampleAccounts": [
+        "Stanford Health Care",
+        "Nassau University Medical Center"
+      ],
+      "links": [
+        {
+          "label": "Stanford FastFax operational writeup",
+          "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
+        },
+        {
+          "label": "NEJM Catalyst FastFax case study",
+          "href": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0273"
+        },
+        {
+          "label": "Notable faxed referral automation case study",
+          "href": "https://www.notablehealth.com/customer-stories/optimizing-referral-management-with-ai"
+        }
+      ]
+    },
+    {
+      "name": "Referrals",
+      "motion": "Referral intake, transcription, urgency detection, missing-information follow-up, referral leakage, and downstream scheduling handoff.",
+      "signals": [
+        "referral management",
+        "faxed referral",
+        "order transcription",
+        "referral coordination",
+        "access leakage"
+      ],
+      "sourceTypes": [
+        "Referral automation case studies",
+        "patient-access RFPs",
+        "access leader podcasts/posts"
+      ],
+      "exampleAccounts": [
+        "Stanford Health Care",
+        "Nassau University Medical Center"
+      ],
+      "links": [
+        {
+          "label": "Stanford referral management bottleneck",
+          "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
+        },
+        {
+          "label": "Notable referral automation metrics",
+          "href": "https://www.notablehealth.com/customer-stories/optimizing-referral-management-with-ai"
+        },
+        {
+          "label": "NUMC patient access RFP",
+          "href": "https://www.numc.edu/wp-content/uploads/2026/05/RFP-003-2026.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Document management",
+      "motion": "Classifying unstructured documents, extracting fields, matching patients, attaching to charts, and routing documents into operational queues.",
+      "signals": [
+        "intelligent document processing",
+        "document intake",
+        "document routing",
+        "OCR",
+        "document queue",
+        "chart attachment"
+      ],
+      "sourceTypes": [
+        "Document-processing vendor pages",
+        "fax/referral case studies",
+        "RFP language for workflow automation"
+      ],
+      "exampleAccounts": [
+        "Stanford Health Care",
+        "Nassau University Medical Center"
+      ],
+      "links": [
+        {
+          "label": "Stanford RightFax-to-OnBase workflow",
+          "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
+        },
+        {
+          "label": "Notable intelligent document processing overview",
+          "href": "https://www.notablehealth.com/blog/what-healthcare-leaders-need-to-know-about-intelligent-document-processing"
+        },
+        {
+          "label": "Athenahealth AI fax labeling for document management",
+          "href": "https://www.athenahealth.com/resources/blog/ai-powered-fax-labeling-for-document-management"
+        }
+      ]
+    },
+    {
+      "name": "Contract intelligence",
+      "motion": "Parsing payer contracts, modeling expected reimbursement, reconciling payment variance, and surfacing contract language for RCM operators.",
+      "signals": [
+        "payer contract intelligence",
+        "contract compliance",
+        "expected reimbursement",
+        "payment variance",
+        "revenue integrity"
+      ],
+      "sourceTypes": [
+        "RCM finance coverage",
+        "revenue-integrity thought leadership",
+        "procurement/RFP pages"
+      ],
+      "exampleAccounts": [
+        "Mount Sinai Health System",
+        "Cleveland Clinic",
+        "UNC Health"
+      ],
+      "links": [
+        {
+          "label": "Intelizen contract intelligence for RCM",
+          "href": "https://intelizen.co/post/ai-contract-intelligence-revenue-cycle-management-simplifying-payer-contracts"
+        },
+        {
+          "label": "Becker's underpayment detection and recovery",
+          "href": "https://www.beckershospitalreview.com/finance/how-ai-is-transforming-healthcare-underpayment-detection-and-recovery-in-2026/"
+        },
+        {
+          "label": "Mount Sinai revenue-cycle modernization signal",
+          "href": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/how-mount-sinai-is-transforming-its-revenue-cycle/"
+        }
+      ]
+    },
+    {
+      "name": "Underpayments",
+      "motion": "Finding claims paid below contract, validating reimbursement, preparing appeals, and preventing recurring payer leakage.",
+      "signals": [
+        "underpayments",
+        "payment validation",
+        "reimbursement variance",
+        "appeals automation",
+        "net revenue leakage"
+      ],
+      "sourceTypes": [
+        "Hospital finance coverage",
+        "underpayment recovery explainers",
+        "CFO/RCM leader interviews"
+      ],
+      "exampleAccounts": [
+        "Mount Sinai Health System",
+        "Renown Health",
+        "UNC Health"
+      ],
+      "links": [
+        {
+          "label": "Becker's 2026 underpayment AI coverage",
+          "href": "https://www.beckershospitalreview.com/finance/how-ai-is-transforming-healthcare-underpayment-detection-and-recovery-in-2026/"
+        },
+        {
+          "label": "Intelizen payer-contract variance framing",
+          "href": "https://intelizen.co/post/ai-contract-intelligence-revenue-cycle-management-simplifying-payer-contracts"
+        },
+        {
+          "label": "Ensemble underpayment recovery with AI",
+          "href": "https://www.ensemblehp.com/healthcare-ai-prevents-underpayment-case-study/"
+        }
+      ]
+    },
+    {
+      "name": "Pharmacy operations",
+      "motion": "Specialty pharmacy benefits verification, medication prior authorization, appeals, routing, refills, 340B workflows, and time-to-therapy operations.",
+      "signals": [
+        "specialty pharmacy",
+        "benefit verification",
+        "pharmacy prior authorization",
+        "340B",
+        "refill management",
+        "medication access"
+      ],
+      "sourceTypes": [
+        "EpicShare health-system stories",
+        "specialty pharmacy platform pages",
+        "pharmacy automation coverage"
+      ],
+      "exampleAccounts": [
+        "Renown Health",
+        "Advocate Health"
+      ],
+      "links": [
+        {
+          "label": "EpicShare specialty medication prior authorization",
+          "href": "https://www.epicshare.org/share-and-learn/advocate-ai-electronic-prior-authorization"
+        },
+        {
+          "label": "Plenful specialty pharmacy use case with Renown",
+          "href": "https://www.plenful.com/use-cases/for-specialty-pharmacy"
+        },
+        {
+          "label": "Innovaccer specialty pharmacy AI platform overview",
+          "href": "https://innovaccer.com/blogs/top-10-ai-platforms-for-specialty-pharmacy-in-2026"
+        }
+      ]
     }
   ]
 };

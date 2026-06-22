@@ -255,9 +255,17 @@ Inclusion rule: include accounts only where a health-system leader, RFP, testimo
 - RFPs: highest intent when the use case matches patient access, call center, referral/fax, prior auth, billing, or workflow automation.
 - Health-system-authored case studies: useful when the system itself describes the problem, not just a vendor success story.
 
+## Use-Case Source Buckets To Add To Daily Scans
+
+- Faxes: search for AI fax, fax triage, RightFax, OnBase queue, faxed orders, and faxed referrals. High-yield examples include Stanford's FastFax writeup and NEJM Catalyst case study, where the health system describes urgent faxed referral triage and enterprise document queues.
+- Referrals: search for referral management, faxed referral, order transcription, referral coordination, referral leakage, and access handoffs. Useful sources include patient-access RFPs and referral automation case studies that expose turnaround time, staffing, and scheduling handoff pain.
+- Document management: search for intelligent document processing, document intake, document routing, OCR, chart attachment, and document queues. This catches fax/mail/admin-document workflows that may not use the word "fax" in the title.
+- Contract intelligence: search for payer contract intelligence, contract compliance, expected reimbursement, payment variance, and revenue integrity. These are often buried in RCM finance content rather than in generic AI coverage.
+- Underpayments: search for underpayments, payment validation, reimbursement variance, appeals automation, and net revenue leakage. Treat this as a revenue-integrity subcase of RCM unless the source explicitly names payer-contract or underpayment recovery work.
+- Pharmacy operations: search for specialty pharmacy, benefit verification, benefits investigation, medication access, pharmacy prior authorization, 340B, refill management, and prescription routing. This bucket should catch pharmacy operations and medication-access automation that would otherwise be misclassified as generic prior auth.
+
 ## Source Families To Deprioritize
 
 - Generic "healthcare AI market" articles.
 - Vendor customer lists without a health-system-side quote.
 - Clinical-only AI, imaging, ambient scribe, diagnostics, research, drug discovery, and AI governance unless connected to admin burden, access, RCM, prior auth, claims/denials, referrals/fax, scheduling, or contact center.
-

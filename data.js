@@ -123,12 +123,6 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Podcast; Jefferson Health public post; Becker's Digital Health + Health IT.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/ai-speed-to-value-and-building-the-right-team-at-jefferson-health-with-luis-taveras/"
-        }
-      ],
       "links": []
     },
     {
@@ -167,12 +161,6 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Podcast; Becker's Digital Health + Health IT.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/tracy-peffley-system-vice-president-of-revenue-cycle-management-at-cleveland-clinic/"
-        }
-      ],
       "links": []
     },
     {
@@ -188,16 +176,6 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Digital Health + Health IT; LinkedIn public snippets.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Digital Health + Health IT",
-          "href": "https://podcasts.apple.com/us/podcast/scaling-ai-in-healthcare-with-governance-trust-and/id1594089163?i=1000756367876"
-        },
-        {
-          "label": "LinkedIn public snippets",
-          "href": "https://www.linkedin.com/posts/asc-communications_beckers-healthcare-digital-health-health-activity-7441953124816355330-3GW2"
-        }
-      ],
       "links": []
     },
     {
@@ -213,12 +191,6 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast; LinkedIn public snippets.",
-      "sourceLinks": [
-        {
-          "label": "Becker's CFO + Revenue Cycle Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/todd-conklin-executive-vice-president-and-chief-financial-officer-at-care-new-england-health-system-2/"
-        }
-      ],
       "links": []
     },
     {
@@ -234,12 +206,6 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast.",
-      "sourceLinks": [
-        {
-          "label": "Becker's CFO + Revenue Cycle Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/expanding-tertiary-care-access-in-chicagos-western-suburbs-with-kyle-glass-2/"
-        }
-      ],
       "links": []
     },
     {
@@ -254,12 +220,6 @@ window.GTM_INTENT_DATA = {
         "RCM"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast.",
-      "sourceLinks": [
-        {
-          "label": "Becker's CFO + Revenue Cycle Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/leading-revenue-cycle-innovation-through-automation-and-talent-strategy-with-lynn-ansley/"
-        }
-      ],
       "links": []
     },
     {
@@ -275,12 +235,6 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's CFO + Revenue Cycle Podcast.",
-      "sourceLinks": [
-        {
-          "label": "Becker's CFO + Revenue Cycle Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/sham-firdausi-deputy-chief-financial-officer-of-county-of-santa-clara-health-system-2/"
-        }
-      ],
       "links": []
     },
     {
@@ -297,12 +251,6 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Healthcare Finance News.",
-      "sourceLinks": [
-        {
-          "label": "Healthcare Finance News",
-          "href": "https://www.healthcarefinancenews.com/news/hospitals-all-sizes-are-using-ai-improve-revenue-cycle-operations"
-        }
-      ],
       "links": []
     },
     {
@@ -319,16 +267,6 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's / Olive session landing page.",
-      "sourceLinks": [
-        {
-          "label": "Becker's / Olive session landing page",
-          "href": "https://www.youtube.com/watch?v=QWnqwDoctUM"
-        },
-        {
-          "label": "LinkedIn public snippet",
-          "href": "https://www.linkedin.com/posts/beth-carlson-1b436236_how-wvu-medicines-ai-workforce-is-reducing-activity-6767539490190856194-gMHY"
-        }
-      ],
       "links": []
     },
     {
@@ -344,12 +282,6 @@ window.GTM_INTENT_DATA = {
         "Scheduling/capacity"
       ],
       "sources": "Becker's Hospital Review.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Hospital Review",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/improving-patient-access-through-data-driven-or-operations/"
-        }
-      ],
       "links": []
     },
     {
@@ -364,16 +296,6 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://podcast.show/beckershealthcarepodcast/why-provider-data-and-ai-are-critical-to-patient-access/"
-        },
-        {
-          "label": "LinkedIn public snippets",
-          "href": "https://www.linkedin.com/posts/asc-communications_podcast-healthcare-leadership-activity-7449806093654048768-02fC"
-        }
-      ],
       "links": []
     },
     {
@@ -389,12 +311,6 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast / LinkedIn public snippets",
-          "href": "https://www.google.com/search?q=Jordan%20Ruch%20AtlantiCare%20VISION%202030%20AI%20agents%20Becker%27s%20Healthcare%20Podcast"
-        }
-      ],
       "links": []
     },
     {
@@ -411,16 +327,6 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Becker's Healthcare Podcast notes / Wave.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast notes / Wave",
-          "href": "https://pod.wave.co/podcast/beckers-healthcare-podcast-c9704216-027c-4122-8f5a-abeb5422159d/shekar-ramanathan-executive-director-digital-transformation-atlantic-health"
-        },
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/shekar-ramanathan-executive-director-digital-transformation-atlantic-health/"
-        }
-      ],
       "links": []
     },
     {
@@ -436,16 +342,6 @@ window.GTM_INTENT_DATA = {
         "Admin burden"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
-      "sourceLinks": [
-        {
-          "label": "LinkedIn public snippets",
-          "href": "https://www.linkedin.com/posts/healthdatamovers_healthcare-it-is-no-longer-just-about-systems-activity-7445160974418075648-AF2d"
-        },
-        {
-          "label": "Spotify",
-          "href": "https://open.spotify.com/episode/0oZlZuRHzPglRlNdb6JzDE"
-        }
-      ],
       "links": []
     },
     {
@@ -460,16 +356,6 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's Healthcare Podcast / iHeart.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/dwight-raum-executive-vice-president-and-chief-digital-information-officer-at-rochester-regional-health/"
-        },
-        {
-          "label": "Apple Podcasts",
-          "href": "https://podcasts.apple.com/jp/podcast/dwight-raum-executive-vice-president-and-chief/id1452376188?i=1000772657795"
-        }
-      ],
       "links": []
     },
     {
@@ -485,12 +371,6 @@ window.GTM_INTENT_DATA = {
         "Enterprise AI"
       ],
       "sources": "Becker's Healthcare Podcast.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/making-ai-actionable-across-healthcare-with-jawad-khan-2/"
-        }
-      ],
       "links": []
     },
     {
@@ -505,16 +385,6 @@ window.GTM_INTENT_DATA = {
         "Patient access"
       ],
       "sources": "Becker's Healthcare Podcast / LinkedIn public snippets.",
-      "sourceLinks": [
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/uncategorized/sandra-scott-chief-executive-officer-of-one-brooklyn-health/"
-        },
-        {
-          "label": "LinkedIn public snippets",
-          "href": "https://www.linkedin.com/posts/one-brooklyn-health-system-inc_one-brooklyn-health-ceo-dr-sandra-scott-activity-7420509548240871424-agif"
-        }
-      ],
       "links": []
     },
     {
@@ -529,16 +399,6 @@ window.GTM_INTENT_DATA = {
         "General ops"
       ],
       "sources": "UTMB news; Becker's Healthcare Podcast.",
-      "sourceLinks": [
-        {
-          "label": "UTMB news",
-          "href": "https://www.utmb.edu/news/article/utmb-news/2026/03/16/using-ai-and-operational-strategy-to-transform-care-delivery-with-dr.-salim-hayek"
-        },
-        {
-          "label": "Becker's Healthcare Podcast",
-          "href": "https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/using-ai-and-operational-strategy-to-transform-care-delivery-with-dr-salim-hayek/"
-        }
-      ],
       "links": []
     },
     {
@@ -665,13 +525,10 @@ window.GTM_INTENT_DATA = {
       "why": "Good RCM pressure signal but weaker explicit AI/admin-agent expression.",
       "useCases": [
         "RCM",
-        "Pharmacy operations",
         "Prior auth"
       ],
       "sources": "",
-      "links": [
-        "https://www.plenful.com/use-cases/for-specialty-pharmacy"
-      ]
+      "links": []
     },
     {
       "rank": 35,
@@ -2793,7 +2650,7 @@ window.GTM_INTENT_DATA = {
   "sourceUseCases": [
     {
       "name": "Faxes",
-      "motion": "Inbound fax triage, labeling, routing, and exception handling where clinical or administrative documents still arrive outside the EHR.",
+      "motion": "Health-system-side demand for triaging inbound faxes, routing urgent packets, reducing manual queue review, and connecting fax/document queues to downstream referral operations.",
       "signals": [
         "AI fax",
         "fax triage",
@@ -2803,200 +2660,206 @@ window.GTM_INTENT_DATA = {
         "faxed referrals"
       ],
       "sourceTypes": [
-        "Health-system case studies",
-        "RFPs for patient access/call center platforms",
-        "Vendor case studies with named workflow metrics"
+        "Health-system-authored operational writeups",
+        "RFPs with fax-line/document-management requirements",
+        "RFPs mentioning referral packets, queue routing, or paper/scanned intake"
       ],
       "exampleAccounts": [
         "Stanford Health Care",
-        "Nassau University Medical Center"
+        "OKPCA collaborative clinics"
       ],
       "links": [
         {
-          "label": "Stanford FastFax operational writeup",
+          "label": "Stanford Medicine FastFax operational writeup",
           "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
         },
         {
-          "label": "NEJM Catalyst FastFax case study",
-          "href": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0273"
+          "label": "OKPCA collaborative EHR RFP: fax-line and document management requirements",
+          "href": "https://okpca.org/wp-content/uploads/2025/03/OKPCA-Collaborative-EHR-RFP-v1.pdf"
         },
         {
-          "label": "Notable faxed referral automation case study",
-          "href": "https://www.notablehealth.com/customer-stories/optimizing-referral-management-with-ai"
+          "label": "NUMC patient access RFP: workflow automation and referral coordination",
+          "href": "https://www.numc.edu/wp-content/uploads/2026/05/RFP-003-2026.pdf"
         }
       ]
     },
     {
       "name": "Referrals",
-      "motion": "Referral intake, transcription, urgency detection, missing-information follow-up, referral leakage, and downstream scheduling handoff.",
+      "motion": "Direct buying motion for referral management, post-acute transition workflows, consult routing, referral tracking, external-provider handoffs, and scheduling conversion.",
       "signals": [
         "referral management",
         "faxed referral",
         "order transcription",
         "referral coordination",
-        "access leakage"
+        "care transition",
+        "closed-loop referral"
       ],
       "sourceTypes": [
-        "Referral automation case studies",
+        "Referral-management RFPs",
         "patient-access RFPs",
-        "access leader podcasts/posts"
+        "health-system-authored operational pilots"
       ],
       "exampleAccounts": [
-        "Stanford Health Care",
-        "Nassau University Medical Center"
+        "UNM Hospitals",
+        "Cook County Health",
+        "Nassau University Medical Center",
+        "Stanford Health Care"
       ],
       "links": [
         {
-          "label": "Stanford referral management bottleneck",
-          "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
+          "label": "UNM Hospitals Post-Acute Referral Management System RFP",
+          "href": "https://unmhealth.org/about/bids-proposals/2025-current-bids-proposals/rfp_p509-25_post_acute_referrral_management_system_parms_final_2-11-25_issue_date_2-13-25.pdf"
         },
         {
-          "label": "Notable referral automation metrics",
-          "href": "https://www.notablehealth.com/customer-stories/optimizing-referral-management-with-ai"
+          "label": "Cook County Health eConsult/referral/self-scheduling RFP",
+          "href": "https://cookcountyhealth.org/wp-content/uploads/RFP_H23_0009_Consult-Referral-Mgmt-Self-Scheduling-System_Final-122322-fp.pdf"
         },
         {
-          "label": "NUMC patient access RFP",
+          "label": "NUMC comprehensive patient access RFP",
           "href": "https://www.numc.edu/wp-content/uploads/2026/05/RFP-003-2026.pdf"
         }
       ]
     },
     {
       "name": "Document management",
-      "motion": "Classifying unstructured documents, extracting fields, matching patients, attaching to charts, and routing documents into operational queues.",
+      "motion": "Customer-side requirements for scanning, indexing, fax-line integration, OCR/searchability, attaching documents to notes, audit history, and document activity reporting.",
       "signals": [
-        "intelligent document processing",
-        "document intake",
-        "document routing",
+        "document management",
+        "scanning",
         "OCR",
-        "document queue",
-        "chart attachment"
+        "fax-line integration",
+        "document indexing",
+        "audit history"
       ],
       "sourceTypes": [
-        "Document-processing vendor pages",
-        "fax/referral case studies",
-        "RFP language for workflow automation"
+        "EHR/platform RFPs with document-management matrices",
+        "health-system operational writeups that name fax/document queues",
+        "RCM RFPs requiring paper claims and appeal tools"
       ],
       "exampleAccounts": [
-        "Stanford Health Care",
-        "Nassau University Medical Center"
+        "OKPCA collaborative clinics",
+        "Stanford Health Care"
       ],
       "links": [
         {
-          "label": "Stanford RightFax-to-OnBase workflow",
+          "label": "OKPCA collaborative EHR RFP: document management, fax lines, OCR",
+          "href": "https://okpca.org/wp-content/uploads/2025/03/OKPCA-Collaborative-EHR-RFP-v1.pdf"
+        },
+        {
+          "label": "Stanford Medicine FastFax: RightFax-to-OnBase queues",
           "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
         },
         {
-          "label": "Notable intelligent document processing overview",
-          "href": "https://www.notablehealth.com/blog/what-healthcare-leaders-need-to-know-about-intelligent-document-processing"
-        },
-        {
-          "label": "Athenahealth AI fax labeling for document management",
-          "href": "https://www.athenahealth.com/resources/blog/ai-powered-fax-labeling-for-document-management"
+          "label": "UC Davis Health revenue-cycle RFP: paper claims and appeal tools",
+          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
         }
       ]
     },
     {
       "name": "Contract intelligence",
-      "motion": "Parsing payer contracts, modeling expected reimbursement, reconciling payment variance, and surfacing contract language for RCM operators.",
+      "motion": "Explicit RCM buying motion for payer contract maintenance, allowable calculation, reimbursement accuracy validation, contract interpretation, and contract-loaded technology.",
       "signals": [
-        "payer contract intelligence",
-        "contract compliance",
-        "expected reimbursement",
-        "payment variance",
-        "revenue integrity"
+        "payer contract management",
+        "contract maintenance",
+        "allowable calculation",
+        "accuracy of reimbursement",
+        "contract interpretation",
+        "managed care contracts"
       ],
       "sourceTypes": [
-        "RCM finance coverage",
-        "revenue-integrity thought leadership",
-        "procurement/RFP pages"
+        "Health-system RCM RFPs",
+        "public RFP Q&A documents",
+        "revenue-cycle consulting scopes with payor-contract management"
       ],
       "exampleAccounts": [
-        "Mount Sinai Health System",
-        "Cleveland Clinic",
-        "UNC Health"
+        "UT Southwestern Medical Center",
+        "UC Davis Health",
+        "Schneider Regional Medical Center"
       ],
       "links": [
         {
-          "label": "Intelizen contract intelligence for RCM",
-          "href": "https://intelizen.co/post/ai-contract-intelligence-revenue-cycle-management-simplifying-payer-contracts"
+          "label": "UT Southwestern revenue-cycle Q&A: contract-management technology",
+          "href": "https://www.utsouthwestern.edu/edumedia/edufiles/about_us/admin_offices/Purchasing/hospital-rfp-uth17-0009-q-and-a-revenue-cycle-support.pdf"
         },
         {
-          "label": "Becker's underpayment detection and recovery",
-          "href": "https://www.beckershospitalreview.com/finance/how-ai-is-transforming-healthcare-underpayment-detection-and-recovery-in-2026/"
+          "label": "UC Davis Health revenue-cycle RFP: payer contracts and allowable calculation",
+          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
         },
         {
-          "label": "Mount Sinai revenue-cycle modernization signal",
-          "href": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/how-mount-sinai-is-transforming-its-revenue-cycle/"
+          "label": "SRMC/JFLH RCM consulting RFP: payor contract management",
+          "href": "https://srmedicalcenter.org/wp-content/uploads/2024/11/RFP-TB-2025-001-Revenue-Cycle-Management-Consulting-Services.pdf"
         }
       ]
     },
     {
       "name": "Underpayments",
-      "motion": "Finding claims paid below contract, validating reimbursement, preparing appeals, and preventing recurring payer leakage.",
+      "motion": "Customer-side demand for underpayment recovery, payment variance review, appeals/follow-up, historical-claims review, root-cause analysis, and monitoring expected versus actual payment.",
       "signals": [
-        "underpayments",
-        "payment validation",
-        "reimbursement variance",
-        "appeals automation",
-        "net revenue leakage"
+        "underpayment recovery",
+        "payment variance",
+        "actual payment less than anticipated",
+        "appeals",
+        "root cause analysis",
+        "historical claims"
       ],
       "sourceTypes": [
-        "Hospital finance coverage",
-        "underpayment recovery explainers",
-        "CFO/RCM leader interviews"
+        "Health-system RCM RFPs",
+        "RFP Q&A around outsource recovery services",
+        "revenue-integrity scopes requiring underpayment monitoring"
       ],
       "exampleAccounts": [
-        "Mount Sinai Health System",
-        "Renown Health",
-        "UNC Health"
+        "UC Davis Health",
+        "UT Southwestern Medical Center",
+        "Schneider Regional Medical Center"
       ],
       "links": [
         {
-          "label": "Becker's 2026 underpayment AI coverage",
-          "href": "https://www.beckershospitalreview.com/finance/how-ai-is-transforming-healthcare-underpayment-detection-and-recovery-in-2026/"
+          "label": "UC Davis Health revenue-cycle RFP: underpayment recovery and variance analysis",
+          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
         },
         {
-          "label": "Intelizen payer-contract variance framing",
-          "href": "https://intelizen.co/post/ai-contract-intelligence-revenue-cycle-management-simplifying-payer-contracts"
+          "label": "UT Southwestern revenue-cycle Q&A: underpayment recovery services",
+          "href": "https://www.utsouthwestern.edu/edumedia/edufiles/about_us/admin_offices/Purchasing/hospital-rfp-uth17-0009-q-and-a-revenue-cycle-support.pdf"
         },
         {
-          "label": "Ensemble underpayment recovery with AI",
-          "href": "https://www.ensemblehp.com/healthcare-ai-prevents-underpayment-case-study/"
+          "label": "SRMC/JFLH RCM consulting RFP: denial and underpayment recovery",
+          "href": "https://srmedicalcenter.org/wp-content/uploads/2024/11/RFP-TB-2025-001-Revenue-Cycle-Management-Consulting-Services.pdf"
         }
       ]
     },
     {
       "name": "Pharmacy operations",
-      "motion": "Specialty pharmacy benefits verification, medication prior authorization, appeals, routing, refills, 340B workflows, and time-to-therapy operations.",
+      "motion": "Procurement demand for pharmacy automation, centralized prescription fulfillment, specialty pharmacy support, dispensing automation, pharmacy billing technology, and medication-dispensing systems.",
       "signals": [
+        "pharmacy automation",
+        "central fill",
         "specialty pharmacy",
-        "benefit verification",
-        "pharmacy prior authorization",
-        "340B",
-        "refill management",
-        "medication access"
+        "automated medication dispensing",
+        "pharmacy billing technology",
+        "prescription fulfillment"
       ],
       "sourceTypes": [
-        "EpicShare health-system stories",
-        "specialty pharmacy platform pages",
-        "pharmacy automation coverage"
+        "Academic health-system pharmacy automation RFPs",
+        "behavioral-health pharmacy-services RFPs",
+        "RCM RFPs that call out pharmacy billing technology"
       ],
       "exampleAccounts": [
-        "Renown Health",
-        "Advocate Health"
+        "MU Health Care",
+        "Emergence Health Network",
+        "UC Davis Health"
       ],
       "links": [
         {
-          "label": "EpicShare specialty medication prior authorization",
-          "href": "https://www.epicshare.org/share-and-learn/advocate-ai-electronic-prior-authorization"
+          "label": "MU Health Care pharmacy automation system RFP",
+          "href": "https://www.umsystem.edu/sites/default/files/media/documents/RFP31187_PHARMACY_AUTOMATION_SYSTEM_FOR_CENTRAL_PRESCRIPTION_FULFILLMENT_SERVICES_12_31.pdf"
         },
         {
-          "label": "Plenful specialty pharmacy use case with Renown",
-          "href": "https://www.plenful.com/use-cases/for-specialty-pharmacy"
+          "label": "Emergence Health Network pharmacy services RFP",
+          "href": "https://emergencehealthnetwork.org/wp-content/uploads/2025/04/RFP-25-001-Pharmacy-Services-Final.pdf"
         },
         {
-          "label": "Innovaccer specialty pharmacy AI platform overview",
-          "href": "https://innovaccer.com/blogs/top-10-ai-platforms-for-specialty-pharmacy-in-2026"
+          "label": "UC Davis Health RCM RFP: IP/OP/specialty pharmacy billing process and technology",
+          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
         }
       ]
     }

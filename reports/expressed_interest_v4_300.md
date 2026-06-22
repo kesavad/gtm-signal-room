@@ -257,12 +257,14 @@ Inclusion rule: include accounts only where a health-system leader, RFP, testimo
 
 ## Use-Case Source Buckets To Add To Daily Scans
 
-- Faxes: search for AI fax, fax triage, RightFax, OnBase queue, faxed orders, and faxed referrals. High-yield examples include Stanford's FastFax writeup and NEJM Catalyst case study, where the health system describes urgent faxed referral triage and enterprise document queues.
-- Referrals: search for referral management, faxed referral, order transcription, referral coordination, referral leakage, and access handoffs. Useful sources include patient-access RFPs and referral automation case studies that expose turnaround time, staffing, and scheduling handoff pain.
-- Document management: search for intelligent document processing, document intake, document routing, OCR, chart attachment, and document queues. This catches fax/mail/admin-document workflows that may not use the word "fax" in the title.
-- Contract intelligence: search for payer contract intelligence, contract compliance, expected reimbursement, payment variance, and revenue integrity. These are often buried in RCM finance content rather than in generic AI coverage.
-- Underpayments: search for underpayments, payment validation, reimbursement variance, appeals automation, and net revenue leakage. Treat this as a revenue-integrity subcase of RCM unless the source explicitly names payer-contract or underpayment recovery work.
-- Pharmacy operations: search for specialty pharmacy, benefit verification, benefits investigation, medication access, pharmacy prior authorization, 340B, refill management, and prescription routing. This bucket should catch pharmacy operations and medication-access automation that would otherwise be misclassified as generic prior auth.
+Use customer-originated artifacts as the anchor evidence: health-system RFPs, health-system-authored operational writeups, public testimony, procurement Q&A, board packets, job posts, and operator interviews. Do not anchor a source card on a vendor blog, demo page, or customer-story page unless it links back to a health-system-side artifact.
+
+- Faxes: search for AI fax, fax triage, RightFax, OnBase queue, faxed orders, and faxed referrals. High-yield customer-side examples include Stanford's FastFax writeup, which describes referral fax queues and an explicit vendor search, plus RFPs that require fax-line integration, scanning, OCR, or document-management automation.
+- Referrals: search for referral management, faxed referral, order transcription, referral coordination, referral leakage, care transition, and closed-loop referral. Anchor on RFPs such as UNM Hospitals' post-acute referral management system, Cook County Health's eConsult/referral/self-scheduling platform, and NUMC's patient-access RFP.
+- Document management: search for document management, scanning, OCR, fax-line integration, document indexing, chart attachment, document audit history, and document activity reporting. Strong customer-side examples include OKPCA's collaborative EHR RFP and Stanford's RightFax-to-OnBase FastFax workflow.
+- Contract intelligence: search for payer contract management, contract maintenance, allowable calculation, reimbursement accuracy validation, contract interpretation, managed care contracts, and expected reimbursement. Anchor on RCM RFPs/Q&A from UT Southwestern, UC Davis Health, and SRMC/JFLH.
+- Underpayments: search for underpayment recovery, payment variance, actual payment less than anticipated, appeals, historical claims, and root-cause analysis. Anchor on health-system RCM RFPs/Q&A that explicitly ask for underpayment recovery or technology-enabled payment validation.
+- Pharmacy operations: search for pharmacy automation, central fill, specialty pharmacy, automated medication dispensing, pharmacy billing technology, and prescription fulfillment. Anchor on customer RFPs such as MU Health Care's pharmacy automation system RFP, Emergence Health Network's pharmacy services RFP, and UC Davis Health's pharmacy billing technology scope.
 
 ## Source Families To Deprioritize
 

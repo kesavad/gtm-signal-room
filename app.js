@@ -3,6 +3,8 @@
   const leads = data.leads;
   const accounts = data.accounts;
   const sourceUseCases = data.sourceUseCases || [];
+  const activeRfps = data.activeRfps || [];
+  const asOfDate = data.asOfDate || "2026-06-22";
 
   const tierColors = {
     "Strong expressed intent": "#23815c",
@@ -136,28 +138,60 @@
   }
 
   function renderPriorityBoard() {
-    const visible = filteredLeads();
-    const priorityLeads = visible.length ? visible.slice(0, 8) : [];
-    if (!priorityLeads.length) {
-      els.priorityGrid.innerHTML = renderEmptyState("No priority accounts match the current search.");
-      return;
-    }
-    els.priorityGrid.innerHTML = priorityLeads
-      .map((lead) => {
-        return `
-          <article class="priority-card">
-            <div class="priority-top">
-              <span class="rank-token">${lead.rank}</span>
-              <span class="score-token">${lead.score} intent score</span>
-            </div>
-            <h3>${escapeHtml(lead.account)}</h3>
-            <p>${escapeHtml(lead.signal)}</p>
-            <div class="lead-meta">${lead.useCases.slice(0, 3).map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div>
-            <div class="next-move"><strong>Next move:</strong> ${escapeHtml(nextMove(lead))}</div>
-          </article>
-        `;
-      })
-      .join("");
+    const futureRfps = activeRfps.filter(isFutureRfp).filter(itemMatchesSearch);
+    const operatorLeads = filteredLeads().filter((lead) => !isExpiredRfpLead(lead)).slice(0, 6);
+    const cards = [
+      renderRfpStatusCard(futureRfps.length),
+      ...futureRfps.map(renderFutureRfpCard),
+      ...operatorLeads.map(renderOperatorIntentCard),
+    ];
+    els.priorityGrid.innerHTML = cards.length
+      ? cards.join("")
+      : renderEmptyState("No active buying motions match the current search.");
+  }
+
+  function renderRfpStatusCard(count) {
+    return `
+      <article class="priority-card status-card">
+        <div class="priority-top">
+          <span class="rank-token">${count}</span>
+          <span class="score-token">as of ${escapeHtml(formatDate(asOfDate))}</span>
+        </div>
+        <h3>Future-dated RFPs tracked</h3>
+        <p>${count ? "Only RFPs with proposal deadlines after the as-of date are shown here." : "No future-dated RFPs are currently verified for these workflows. Expired RFPs are excluded from priority and source cards."}</p>
+        <div class="next-move"><strong>Next move:</strong> Monitor procurement feeds daily; add an RFP only after extracting and validating the due date.</div>
+      </article>
+    `;
+  }
+
+  function renderFutureRfpCard(rfp) {
+    return `
+      <article class="priority-card active-rfp-card">
+        <div class="priority-top">
+          <span class="rank-token">RFP</span>
+          <span class="score-token">Due ${escapeHtml(formatDate(rfp.dueDate))}</span>
+        </div>
+        <h3>${escapeHtml(rfp.account)}</h3>
+        <p>${escapeHtml(rfp.title)}</p>
+        <div class="lead-meta">${(rfp.useCases || []).slice(0, 3).map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div>
+        <div class="next-move"><strong>Next move:</strong> ${escapeHtml(rfp.nextMove || "Review fit, procurement owner, and response deadline immediately.")}</div>
+      </article>
+    `;
+  }
+
+  function renderOperatorIntentCard(lead) {
+    return `
+      <article class="priority-card operator-card">
+        <div class="priority-top">
+          <span class="rank-token">${lead.rank}</span>
+          <span class="score-token">operator signal</span>
+        </div>
+        <h3>${escapeHtml(lead.account)}</h3>
+        <p>${escapeHtml(lead.signal)}</p>
+        <div class="lead-meta">${lead.useCases.slice(0, 3).map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div>
+        <div class="next-move"><strong>Next move:</strong> ${escapeHtml(nextMove(lead))}</div>
+      </article>
+    `;
   }
 
   function renderUseCaseOptions() {
@@ -190,8 +224,13 @@
             <strong>Best sources</strong>
             <ul>${(useCase.sourceTypes || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
           </div>
+          <div class="rfp-status">${escapeHtml(useCase.rfpStatus || "Only future-dated customer RFPs should be treated as active buying motion.")}</div>
           <div class="usecase-examples">${(useCase.exampleAccounts || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
-          <div class="usecase-links">${(useCase.links || []).map((link) => `<a href="${escapeAttribute(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}</div>
+          ${
+            (useCase.links || []).length
+              ? `<div class="usecase-links">${useCase.links.map((link) => `<a href="${escapeAttribute(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}</div>`
+              : ""
+          }
         </article>
       `;
     }).join("");
@@ -304,43 +343,10 @@
 
   function renderSources(lead) {
     const links = lead.links || [];
-    const sourceNames = splitSources(lead.sources);
-    const sourceChips = sourceNames.length
-      ? `<div class="source-names">${sourceNames.map((source, index) => renderSourceChip(lead, source, index)).join("")}</div>`
-      : "";
-    const directLinks = links
-      .map((href, index) => `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">Open source ${index + 1}</a>`)
-      .join("");
-
-    if (sourceChips || directLinks) {
-      return `${sourceChips}${directLinks}`;
+    if (links.length) {
+      return links.map((href, index) => `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">Open source ${index + 1}</a>`).join("");
     }
-
-    return `<a href="${escapeAttribute(sourceSearchUrl(lead, "source evidence"))}" target="_blank" rel="noreferrer">Find source evidence</a>`;
-  }
-
-  function renderSourceChip(lead, source, index) {
-    const sourceLinks = lead.sourceLinks || [];
-    const explicit = sourceLinks.find((item) => item.label === source) || sourceLinks[index];
-    const href = explicit?.href || lead.links?.[index] || sourceSearchUrl(lead, source);
-    const label = explicit?.label || source;
-    return `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`;
-  }
-
-  function sourceSearchUrl(lead, source) {
-    const query = [lead.account, source, lead.signal].filter(Boolean).join(" ");
-    return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-  }
-
-  function splitSources(sources) {
-    if (!sources) {
-      return [];
-    }
-
-    return String(sources)
-      .split(";")
-      .map((source) => source.trim())
-      .filter(Boolean);
+    return `<span>${escapeHtml(lead.sources || "Source noted in report")}</span>`;
   }
 
   function renderCoverage() {
@@ -391,6 +397,33 @@
       ];
       return matchesQuery(haystack);
     });
+  }
+
+  function isExpiredRfpLead(lead) {
+    const text = `${lead.signal} ${lead.evidence} ${lead.why}`.toLowerCase();
+    return text.includes("rfp") && !text.includes("future-dated");
+  }
+
+  function isFutureRfp(rfp) {
+    if (!rfp.dueDate) return false;
+    return new Date(`${rfp.dueDate}T00:00:00`) > new Date(`${asOfDate}T00:00:00`);
+  }
+
+  function itemMatchesSearch(item) {
+    if (!state.query) return true;
+    return matchesQuery([
+      item.account,
+      item.title,
+      item.workflow,
+      item.source,
+      (item.useCases || []).join(" "),
+    ]);
+  }
+
+  function formatDate(value) {
+    const date = new Date(`${value}T00:00:00`);
+    if (Number.isNaN(date.getTime())) return value;
+    return date.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
   }
 
   function nextMove(lead) {

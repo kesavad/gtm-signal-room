@@ -127,29 +127,6 @@ window.GTM_INTENT_DATA = {
     },
     {
       "rank": 8,
-      "account": "Nassau Health Care Corporation / Nassau University Medical Center",
-      "tier": "Strong expressed intent",
-      "score": 84,
-      "signal": "Direct RFP for a comprehensive patient access and managed call center solution.",
-      "evidence": "RFP asks for centralized access/call center platform, workflow automation, AI-enabled patient engagement, virtual agents/chatbots, predictive staffing, scheduling, registration, referral coordination, insurance verification, and billing inquiry support.",
-      "why": "Cleanest \"we are looking to solve this now\" signal found. Account may be smaller than ideal ICP, but the problem statement is exact.",
-      "useCases": [
-        "Patient access",
-        "Fax/referrals",
-        "Contact center",
-        "Scheduling/capacity",
-        "Admin burden",
-        "Faxes",
-        "Referrals",
-        "Document management"
-      ],
-      "sources": "NUMC RFP; Govly; HigherGov.",
-      "links": [
-        "https://www.numc.edu/wp-content/uploads/2026/05/RFP-003-2026.pdf"
-      ]
-    },
-    {
-      "rank": 9,
       "account": "Cleveland Clinic",
       "tier": "Strong watchlist",
       "score": 66,
@@ -164,7 +141,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 10,
+      "rank": 9,
       "account": "City of Hope",
       "tier": "Strong watchlist",
       "score": 66,
@@ -179,7 +156,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 11,
+      "rank": 10,
       "account": "Care New England Health System",
       "tier": "Strong watchlist",
       "score": 66,
@@ -194,7 +171,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 12,
+      "rank": 11,
       "account": "UChicago Medicine AdventHealth",
       "tier": "Strong watchlist",
       "score": 65,
@@ -209,7 +186,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 13,
+      "rank": 12,
       "account": "Moffitt Cancer Center",
       "tier": "Strong watchlist",
       "score": 65,
@@ -223,7 +200,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 14,
+      "rank": 13,
       "account": "County of Santa Clara Health System",
       "tier": "Strong watchlist",
       "score": 65,
@@ -238,7 +215,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 15,
+      "rank": 14,
       "account": "Northwell Health",
       "tier": "Strong watchlist",
       "score": 65,
@@ -254,7 +231,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 16,
+      "rank": 15,
       "account": "WVU Medicine",
       "tier": "Strong watchlist",
       "score": 64,
@@ -270,7 +247,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 17,
+      "rank": 16,
       "account": "The University of Kansas Health System",
       "tier": "Strong watchlist",
       "score": 64,
@@ -285,7 +262,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 18,
+      "rank": 17,
       "account": "HonorHealth",
       "tier": "Strong watchlist",
       "score": 64,
@@ -299,7 +276,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 19,
+      "rank": 18,
       "account": "AtlantiCare",
       "tier": "Strong watchlist",
       "score": 64,
@@ -314,7 +291,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 20,
+      "rank": 19,
       "account": "Atlantic Health System",
       "tier": "Strong watchlist",
       "score": 63,
@@ -330,7 +307,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 21,
+      "rank": 20,
       "account": "UAMS / University of Arkansas for Medical Sciences",
       "tier": "Strong watchlist",
       "score": 63,
@@ -345,7 +322,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 22,
+      "rank": 21,
       "account": "Rochester Regional Health",
       "tier": "Strong watchlist",
       "score": 63,
@@ -359,7 +336,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 23,
+      "rank": 22,
       "account": "Akron Children's",
       "tier": "Strong watchlist",
       "score": 63,
@@ -374,7 +351,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 24,
+      "rank": 23,
       "account": "One Brooklyn Health",
       "tier": "Strong watchlist",
       "score": 62,
@@ -388,7 +365,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 25,
+      "rank": 24,
       "account": "University of Texas Medical Branch",
       "tier": "Strong watchlist",
       "score": 62,
@@ -402,7 +379,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 26,
+      "rank": 25,
       "account": "Mayo Clinic",
       "tier": "Lower confidence",
       "score": 36,
@@ -417,7 +394,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 27,
+      "rank": 26,
       "account": "University Hospitals",
       "tier": "Lower confidence",
       "score": 36,
@@ -431,7 +408,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 28,
+      "rank": 27,
       "account": "Hackensack Meridian Health",
       "tier": "Lower confidence",
       "score": 35,
@@ -445,7 +422,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 29,
+      "rank": 28,
       "account": "Cincinnati Children's Hospital Medical Center",
       "tier": "Lower confidence",
       "score": 35,
@@ -459,7 +436,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 30,
+      "rank": 29,
       "account": "Duke Health",
       "tier": "Lower confidence",
       "score": 35,
@@ -473,22 +450,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 31,
-      "account": "Grady Health System",
-      "tier": "Lower confidence",
-      "score": 35,
-      "signal": "2026 virtual nursing RFP includes services/artificial intelligence language and patient-access objectives.",
-      "evidence": "",
-      "why": "RFP-adjacent, but more clinical/virtual nursing than core admin workflow automation.",
-      "useCases": [
-        "Patient access",
-        "Admin burden"
-      ],
-      "sources": "",
-      "links": []
-    },
-    {
-      "rank": 32,
+      "rank": 30,
       "account": "Penn State Health",
       "tier": "Lower confidence",
       "score": 34,
@@ -502,7 +464,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 33,
+      "rank": 31,
       "account": "Dartmouth Health",
       "tier": "Lower confidence",
       "score": 34,
@@ -516,7 +478,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 34,
+      "rank": 32,
       "account": "Renown Health",
       "tier": "Lower confidence",
       "score": 34,
@@ -531,7 +493,7 @@ window.GTM_INTENT_DATA = {
       "links": []
     },
     {
-      "rank": 35,
+      "rank": 33,
       "account": "UNC Health",
       "tier": "Lower confidence",
       "score": 34,
@@ -985,7 +947,7 @@ window.GTM_INTENT_DATA = {
       "name": "Grady Health System",
       "region": "Georgia",
       "seed_source": "large_system_seed",
-      "hasLead": true
+      "hasLead": false
     },
     {
       "rank": 64,
@@ -2392,7 +2354,7 @@ window.GTM_INTENT_DATA = {
       "name": "Nassau Health Care Corporation",
       "region": "New York",
       "seed_source": "expanded_public_system_seed",
-      "hasLead": true
+      "hasLead": false
     },
     {
       "rank": 265,
@@ -2660,28 +2622,20 @@ window.GTM_INTENT_DATA = {
         "faxed referrals"
       ],
       "sourceTypes": [
-        "Health-system-authored operational writeups",
-        "RFPs with fax-line/document-management requirements",
-        "RFPs mentioning referral packets, queue routing, or paper/scanned intake"
+        "Future-dated health-system RFPs only",
+        "Health-system-authored workflow evidence",
+        "Operator posts or interviews expressing active fax/document pain"
       ],
       "exampleAccounts": [
-        "Stanford Health Care",
-        "OKPCA collaborative clinics"
+        "Stanford Health Care"
       ],
       "links": [
         {
           "label": "Stanford Medicine FastFax operational writeup",
           "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
-        },
-        {
-          "label": "OKPCA collaborative EHR RFP: fax-line and document management requirements",
-          "href": "https://okpca.org/wp-content/uploads/2025/03/OKPCA-Collaborative-EHR-RFP-v1.pdf"
-        },
-        {
-          "label": "NUMC patient access RFP: workflow automation and referral coordination",
-          "href": "https://www.numc.edu/wp-content/uploads/2026/05/RFP-003-2026.pdf"
         }
-      ]
+      ],
+      "rfpStatus": "No future-dated customer RFP currently tracked. Stanford remains as customer-authored workflow evidence, not an active procurement motion."
     },
     {
       "name": "Referrals",
@@ -2695,30 +2649,20 @@ window.GTM_INTENT_DATA = {
         "closed-loop referral"
       ],
       "sourceTypes": [
-        "Referral-management RFPs",
-        "patient-access RFPs",
-        "health-system-authored operational pilots"
+        "Future-dated referral-management RFPs only",
+        "Patient-access leader posts/interviews",
+        "Health-system-authored referral workflow evidence"
       ],
       "exampleAccounts": [
-        "UNM Hospitals",
-        "Cook County Health",
-        "Nassau University Medical Center",
         "Stanford Health Care"
       ],
       "links": [
         {
-          "label": "UNM Hospitals Post-Acute Referral Management System RFP",
-          "href": "https://unmhealth.org/about/bids-proposals/2025-current-bids-proposals/rfp_p509-25_post_acute_referrral_management_system_parms_final_2-11-25_issue_date_2-13-25.pdf"
-        },
-        {
-          "label": "Cook County Health eConsult/referral/self-scheduling RFP",
-          "href": "https://cookcountyhealth.org/wp-content/uploads/RFP_H23_0009_Consult-Referral-Mgmt-Self-Scheduling-System_Final-122322-fp.pdf"
-        },
-        {
-          "label": "NUMC comprehensive patient access RFP",
-          "href": "https://www.numc.edu/wp-content/uploads/2026/05/RFP-003-2026.pdf"
+          "label": "Stanford Medicine FastFax referral-queue writeup",
+          "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
         }
-      ]
+      ],
+      "rfpStatus": "No future-dated customer RFP currently tracked. Expired referral RFPs are excluded from active source links."
     },
     {
       "name": "Document management",
@@ -2732,28 +2676,20 @@ window.GTM_INTENT_DATA = {
         "audit history"
       ],
       "sourceTypes": [
-        "EHR/platform RFPs with document-management matrices",
-        "health-system operational writeups that name fax/document queues",
-        "RCM RFPs requiring paper claims and appeal tools"
+        "Future-dated document-management RFPs only",
+        "Health-system-authored queue/scanning/OCR evidence",
+        "Job posts for document automation ownership"
       ],
       "exampleAccounts": [
-        "OKPCA collaborative clinics",
         "Stanford Health Care"
       ],
       "links": [
         {
-          "label": "OKPCA collaborative EHR RFP: document management, fax lines, OCR",
-          "href": "https://okpca.org/wp-content/uploads/2025/03/OKPCA-Collaborative-EHR-RFP-v1.pdf"
-        },
-        {
           "label": "Stanford Medicine FastFax: RightFax-to-OnBase queues",
           "href": "https://med.stanford.edu/seal/explore-seal-app/fast-fax.html"
-        },
-        {
-          "label": "UC Davis Health revenue-cycle RFP: paper claims and appeal tools",
-          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
         }
-      ]
+      ],
+      "rfpStatus": "No future-dated customer RFP currently tracked. Expired document-management RFPs are excluded from active source links."
     },
     {
       "name": "Contract intelligence",
@@ -2767,29 +2703,13 @@ window.GTM_INTENT_DATA = {
         "managed care contracts"
       ],
       "sourceTypes": [
-        "Health-system RCM RFPs",
-        "public RFP Q&A documents",
-        "revenue-cycle consulting scopes with payor-contract management"
+        "Future-dated payer-contract/RCM RFPs only",
+        "RCM leader interviews naming contract variance pain",
+        "Revenue-integrity job posts for payment validation"
       ],
-      "exampleAccounts": [
-        "UT Southwestern Medical Center",
-        "UC Davis Health",
-        "Schneider Regional Medical Center"
-      ],
-      "links": [
-        {
-          "label": "UT Southwestern revenue-cycle Q&A: contract-management technology",
-          "href": "https://www.utsouthwestern.edu/edumedia/edufiles/about_us/admin_offices/Purchasing/hospital-rfp-uth17-0009-q-and-a-revenue-cycle-support.pdf"
-        },
-        {
-          "label": "UC Davis Health revenue-cycle RFP: payer contracts and allowable calculation",
-          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
-        },
-        {
-          "label": "SRMC/JFLH RCM consulting RFP: payor contract management",
-          "href": "https://srmedicalcenter.org/wp-content/uploads/2024/11/RFP-TB-2025-001-Revenue-Cycle-Management-Consulting-Services.pdf"
-        }
-      ]
+      "exampleAccounts": [],
+      "links": [],
+      "rfpStatus": "No future-dated customer RFP currently tracked. Expired RCM contract/underpayment RFPs are excluded."
     },
     {
       "name": "Underpayments",
@@ -2803,29 +2723,13 @@ window.GTM_INTENT_DATA = {
         "historical claims"
       ],
       "sourceTypes": [
-        "Health-system RCM RFPs",
-        "RFP Q&A around outsource recovery services",
-        "revenue-integrity scopes requiring underpayment monitoring"
+        "Future-dated underpayment-recovery RFPs only",
+        "CFO/CRO interviews naming payer pressure and recovery gaps",
+        "Revenue-integrity job posts for variance/appeals work"
       ],
-      "exampleAccounts": [
-        "UC Davis Health",
-        "UT Southwestern Medical Center",
-        "Schneider Regional Medical Center"
-      ],
-      "links": [
-        {
-          "label": "UC Davis Health revenue-cycle RFP: underpayment recovery and variance analysis",
-          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
-        },
-        {
-          "label": "UT Southwestern revenue-cycle Q&A: underpayment recovery services",
-          "href": "https://www.utsouthwestern.edu/edumedia/edufiles/about_us/admin_offices/Purchasing/hospital-rfp-uth17-0009-q-and-a-revenue-cycle-support.pdf"
-        },
-        {
-          "label": "SRMC/JFLH RCM consulting RFP: denial and underpayment recovery",
-          "href": "https://srmedicalcenter.org/wp-content/uploads/2024/11/RFP-TB-2025-001-Revenue-Cycle-Management-Consulting-Services.pdf"
-        }
-      ]
+      "exampleAccounts": [],
+      "links": [],
+      "rfpStatus": "No future-dated customer RFP currently tracked. Expired underpayment-recovery RFPs are excluded."
     },
     {
       "name": "Pharmacy operations",
@@ -2839,29 +2743,20 @@ window.GTM_INTENT_DATA = {
         "prescription fulfillment"
       ],
       "sourceTypes": [
-        "Academic health-system pharmacy automation RFPs",
-        "behavioral-health pharmacy-services RFPs",
-        "RCM RFPs that call out pharmacy billing technology"
+        "Future-dated pharmacy automation RFPs only",
+        "Pharmacy operations leader posts/interviews",
+        "Health-system job posts for specialty pharmacy automation"
       ],
-      "exampleAccounts": [
-        "MU Health Care",
-        "Emergence Health Network",
-        "UC Davis Health"
-      ],
-      "links": [
-        {
-          "label": "MU Health Care pharmacy automation system RFP",
-          "href": "https://www.umsystem.edu/sites/default/files/media/documents/RFP31187_PHARMACY_AUTOMATION_SYSTEM_FOR_CENTRAL_PRESCRIPTION_FULFILLMENT_SERVICES_12_31.pdf"
-        },
-        {
-          "label": "Emergence Health Network pharmacy services RFP",
-          "href": "https://emergencehealthnetwork.org/wp-content/uploads/2025/04/RFP-25-001-Pharmacy-Services-Final.pdf"
-        },
-        {
-          "label": "UC Davis Health RCM RFP: IP/OP/specialty pharmacy billing process and technology",
-          "href": "https://health.ucdavis.edu/media-resources/supply-chain/documents/pdfs/fy23/rfp-012423-bj.pdf"
-        }
-      ]
+      "exampleAccounts": [],
+      "links": [],
+      "rfpStatus": "No future-dated customer RFP currently tracked. Expired pharmacy automation RFPs are excluded."
     }
-  ]
+  ],
+  "asOfDate": "2026-06-22",
+  "activeRfps": [],
+  "expiredRfpPolicy": {
+    "rule": "Do not display RFPs as active buying motions unless the proposal deadline is after the as-of date.",
+    "asOfDate": "2026-06-22",
+    "removedCount": 8
+  }
 };
